@@ -1,7 +1,7 @@
 import styles from './Search.module.scss'
 import { useState } from 'react';
 
-export const Search = () => {
+function Search(){
 
     const [digitacao, setDigitacao] = useState<string>('');
     const [eFocoPointer, setEFocadoPointer] = useState<boolean>(false);

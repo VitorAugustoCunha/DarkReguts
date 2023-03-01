@@ -1,16 +1,14 @@
 import styles from './CardSearch.module.scss'
 import PopularIcon from '../../../assets/PopularIcon'
-import { Link } from "react-router-dom";
 
 interface CardSearchProps {
     title: string
     content: string
-    page: string
-    pageIcon: string
+    userName: string
+    userIcon: string
     imagem?: string
 }
-
-const CardSearch = ({title, content, page, pageIcon, imagem}: CardSearchProps) => {
+function CardSearch({title, content, userName, userIcon, imagem}: CardSearchProps) {
     return(
             <div className={styles.card}>
                 <div className={styles.top}>
@@ -31,10 +29,10 @@ const CardSearch = ({title, content, page, pageIcon, imagem}: CardSearchProps) =
             </div>
             <div className={styles.bottom}>
                 <div className={styles.page__icon}>
-                    <img src={pageIcon} alt={title} />
+                    <img src={userIcon} alt={title} />
                 </div>
-                    <div className={styles.page}>
-                        d/{page}
+                    <div className={styles.userName}>
+                        d/{userName}
                     </div>
                 </div>
             </div>
