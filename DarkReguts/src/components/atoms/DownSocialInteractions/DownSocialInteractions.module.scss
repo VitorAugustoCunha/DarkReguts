@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    width: 26%;
+    border-radius:5px ;
+}
+
+.container:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(232, 232, 232);
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    color:rgb(153, 155, 157);
+}
+
+.lista  {
+    margin: 0 3px;
+    align-items: center;
+}
+
+
+
+.icon {
+    margin-top: 14px;
+    align-items: center;
+}
