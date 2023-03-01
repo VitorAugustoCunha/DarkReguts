@@ -1,37 +1,94 @@
 .card {
-    width: 320px;
-    height: 320px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    padding: 16px;
+  width: 600px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .top {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    h3 {
-      font-size: 24px;
-      margin-top: 0;
-    }
-  
-    p {
-      font-size: 16px;
-      &:last-child {
-        margin-bottom: 0;
+    align-items: center;
+    margin: 16px 16px 0;
+
+    .icon {
+      margin-right: 12px;
+      width: 28px;
+      height: 28px;
+      svg {
+        width: 100%;
+        height: 100%;
       }
     }
-  
-    img {
-      width: 100%;
-      height: auto;
-      margin-top: 16px;
-      border-radius: 4px;
-    }
-  
-    span {
-      font-size: 14px;
-      margin-right: 8px;
-      color: #888888;
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #000000;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
+  .middle{
+    display: inline-flex;
+    flex-direction: row
+  }
   
+  .content {
+    font-size: 11px;
+    color: #666666;
+    width: 75%;
+    height: auto;
+    margin: 16px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .image {
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 0 16px 16px;
+
+    .page__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #c4c4c4;
+      margin-right: 8px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .page {
+      font-size: 14px;
+      color: #666666;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
