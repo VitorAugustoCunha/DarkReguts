@@ -1,0 +1,10 @@
+.searchDiv{
+    width: 60%;
+    .searchPopular {
+        width: 100%;
+        height: 20rem; /* definir uma altura fixa para o contêiner pai */
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      
+}

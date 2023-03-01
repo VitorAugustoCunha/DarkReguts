@@ -2,7 +2,7 @@ import styles from './SearchTitle.module.scss'
 
 function SearchTitle(){
     return(
-        <div>
+        <div className={styles.title}>
             <h4>EM ALTA HOJE</h4>
         </div>
     );

@@ -1,6 +1,7 @@
 // Estilo de input de texto padrão do macOS
 input[type="text"],
 textarea {
+  width: 100%;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid #dcdcdc;
